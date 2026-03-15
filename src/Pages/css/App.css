@@ -1,0 +1,180 @@
+.Main-page header {
+  background-color: rgba(10, 15, 20, 1);
+  border-bottom: 1px solid rgba(37, 140, 244, 0.2);
+  padding: 18px 24px 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .codeIcon-box {
+    background-color: rgba(37, 140, 244, 1);
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 20px;
+
+    span {
+      color: rgba(37, 140, 244, 1);
+    }
+  }
+
+  .link {
+    color: rgba(241, 245, 249, 1);
+    transition: 0.3s ease-in;
+    padding: 10px;
+  }
+
+  .link:hover {
+    color: rgba(37, 140, 244, 1);
+  }
+
+  .link.active {
+    color: rgba(37, 140, 244, 1);
+    border-bottom: 2px solid;
+    border-color: rgba(37, 140, 244, 1);
+  }
+
+  .link:active {
+    color: rgba(37, 140, 244, 1);
+    border-bottom: 2px solid;
+    border-color: rgba(37, 140, 244, 1);
+  }
+
+  .photoLogo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(37, 140, 244, 0.3);
+    padding: 2px;
+  }
+}
+
+.Main-page main {
+  background-image: url("../../assets/Container.png");
+  width: 100%;
+  padding: 0 20px 0 20px;
+  background-color: #0A0F14;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  h1 {
+    font-size: 96px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+
+    span {
+      background: linear-gradient(90deg, #258CF4 0%, #A855F7 50%, #06B6D4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  p {
+    color: rgba(148, 163, 184, 1);
+    width: 670.6699829101562;
+    height: 84;
+    opacity: 1;
+
+    font-weight: 300;
+    font-style: Light;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+  }
+}
+
+.Main-page .span-box {
+  margin-top: 50px;
+  padding: 8px;
+  background: rgba(37, 140, 244, 0.1);
+  border: 1px solid rgba(37, 140, 244, 0.2);
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(37, 140, 244, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+}
+
+.Main-page .box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  font-weight: 600;
+  width: 100%;
+  padding: 24px;
+  transition: 0.3s ease-in;
+
+  h2 {
+    color: #fff;
+    margin: 0;
+    line-height: 32px;
+
+
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.6px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #64748B;
+  }
+}
+
+.Main-page .box:hover {
+  box-shadow: 0px 10px 10px 0px rgba(37, 140, 244, 1);
+}
+
+.box::before {
+
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--x) var(--y), rgba(88, 0, 239, 0.866), transparent 30%);
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.box:hover::before {
+  opacity: 1;
+}
+
+.Main-page footer {
+  background-color: #0A0F14;
+  border-width: 1px, 0px, 1px, 0px;
+  border-style: solid;
+  border-color: rgba(37, 140, 244, 0.1);
+  padding: 20px 32px 20px 32px;
+
+  p {
+    color: #64748B;
+    font-size: 12px;
+  }
+
+  a {
+    color: #64748B;
+    font-size: 14px;
+  }
+}
